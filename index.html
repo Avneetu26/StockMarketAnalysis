@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Analysis</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Market Analysis</h1>
+        <div class="main-content">
+            <div class="chart-section">
+                <div id="chart"></div>
+                <div class="range-buttons">
+                    <button class="range-btn" data-range="1mo">1 Month</button>
+                    <button class="range-btn" data-range="3mo">3 Month</button>
+                    <button class="range-btn" data-range="1y">1 Year</button>
+                    <button class="range-btn" data-range="5y">5 Years</button>
+                </div>   
+                
+                <div class="details-section">
+                    <div class="stock-header">
+                        <span id="stock-symbol" class="stock-symbol"></span>
+                        <span id="stock-price" class="stock-price"></span>
+                        <span id="stock-change" class="stock-change"></span>
+                    </div>
+                    <p id="stock-description" class="stock-description"></p>
+                </div>  
+            </div>
+            
+            
+            <div class="list-section">
+                <ul id="stock-list"></ul>
+            </div>
+        </div>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

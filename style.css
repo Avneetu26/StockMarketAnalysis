@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #000033;
+    color: white;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-content {
+    display: flex;
+    gap: 20px;
+}
+
+.chart-section {
+    flex: 1;
+    background-color: #000066;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+#chart {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.range-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.range-btn {
+    padding: 8px 16px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #4444ff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.range-btn:hover, .range-btn.active {
+    background-color: #4444ff;
+}
+
+.list-section {
+    width: 250px;
+    background-color: #000066;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#stock-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stock-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.stock-item:hover, .stock-item.active {
+    background-color: #0000aa;
+}
+
+.stock-symbol-box {
+    background-color: #000099;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.stock-price-info {
+    text-align: right;
+}
+
+.stock-change {
+    font-size: 0.9em;
+}
+
+.change-positive {
+    color: #00ff00;
+}
+
+.change-negative {
+    color: #ff0000;
+}
+
+.details-section {
+    /* display: flex; */
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #000044;
+    border-radius: 8px;
+}
+
+.stock-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.stock-symbol {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.stock-description {
+    color: #cccccc;
+    font-size: 0.7em;
+}
+
